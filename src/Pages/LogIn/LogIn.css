@@ -1,0 +1,103 @@
+/* LogIn.css */
+.LogIn_body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  /* width: 10rem; */
+}
+
+.LogIn_conatiner {
+  width: 90%;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.LogIn_conatiner > * {
+  margin-top: 0.8rem;
+}
+
+.LogIn_body h2 {
+  color: #181b2b;
+}
+
+.LogIn_body h4 {
+  color: #444753;
+}
+
+.LogIn_body h3 {
+  color: #595f6d;
+  margin-bottom: 1.5rem;
+}
+
+.login,
+.login_google {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #fa3a3a;
+  color: white;
+}
+.disable{
+  background: #fa8f8f;
+}
+
+.login_google {
+  color: black;
+  border: 1px solid #979aa8;
+  background: white;
+}
+
+.toSignup {
+  text-align: center;
+  color: #595f6d;
+}
+.inputs_container {
+  position: relative;
+}
+.inputs {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border: 2px solid #979aa8;
+  border-radius: 0.7rem;
+}
+
+.inputs:focus {
+  border-color: #fe7271;
+  outline: none;
+}
+.icons {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fa3a3a;
+}
+.wrong_password {
+  color: rgb(233, 10, 10);
+}
+
+.icons.jump-animation {
+  animation: jumps 0.5s;
+  animation-iteration-count: 2;
+}
+
+@keyframes jumps {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 30%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@media (min-width: 540px) {
+  .LogIn_conatiner {
+    width: 30rem;
+  }
+}

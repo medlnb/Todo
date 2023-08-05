@@ -1,0 +1,65 @@
+.notes_container {
+  box-shadow: 2px 2px 5px #fe7271;
+  border-radius: 1rem;
+  height: 50vh;
+  padding: 3rem;
+  position: relative;
+}
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  background: whitesmoke;
+}
+.addnote_container {
+  background-color: #fe7271;
+  position: absolute;
+  bottom: 0;
+  border-radius: 1rem 1rem 0 0;
+  left: 50%;
+  width: 100%;
+  padding: 1rem;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.addnote {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+.addnote_button {
+  border: none;
+  color: #fe7271;
+  font-size: 2rem;
+  background: none;
+}
+
+.newnoteinput {
+  width: 80%;
+  border: none;
+  font-size: 20px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.tasks_container {
+  height: 103%;
+  padding: 1.5rem 0;
+  overflow: scroll;
+}
+.tasks_container::-webkit-scrollbar {
+  display: none;
+}

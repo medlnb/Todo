@@ -1,0 +1,41 @@
+.welcome_container {
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to bottom, #fe7271, #f73e3e);
+}
+.welcome_container h1 {
+  /* background: white; */
+  /* padding: .5rem 1.5rem; */
+  color: white;
+}
+.logo {
+  width: 80%;
+  aspect-ratio: 1/0.4;
+}
+
+.welcome_container h3 {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+.link {
+  background: white;
+  padding: 0.7rem 5rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+}
+.link:visited {
+  color: black;
+}
+.link:link {
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .logo {
+    width: 100%;
+  }
+}

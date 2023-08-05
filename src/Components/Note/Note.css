@@ -1,0 +1,54 @@
+.label {
+  position: relative;
+}
+
+.dashed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 100%;
+  display: block;
+  transition: 1s;
+  margin-left: 0.5rem;
+}
+
+.note {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left_note {
+  overflow: hidden;
+  display: flex;
+}
+
+.note > * {
+  margin: 0.5rem 1rem;
+}
+
+.done {
+  background: none;
+  border: none;
+  padding: 1px;
+  color: #fe7271;
+  font-size: 17px;
+  border-radius: 0.2rem;
+}
+
+.done:active {
+  background-color: gray;
+}
+
+.label {
+  font-size: 20px;
+  color: rgb(38, 38, 38);
+  margin-left: 0.5rem;
+  white-space: nowrap;
+  overflow: scroll;
+}
+.label::-webkit-scrollbar {
+  display: none;
+}

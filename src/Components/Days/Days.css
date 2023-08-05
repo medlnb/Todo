@@ -1,0 +1,43 @@
+.days_containers {
+  display: grid;
+  grid-template-columns: repeat(5,100%) ; 
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.days_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  padding: 5px;
+  color: white;
+  gap: 14.5px;
+  scroll-snap-align: start;
+  /* border: 1px solid black; */
+}
+
+.days_containers::-webkit-scrollbar{
+  display: none;
+}
+.day , .day_clicked{
+  /* border: 1px solid black; */
+  /* flex:1; */
+  width: 2rem;
+  height: 2rem;
+  color: #fe7271;
+  background: white;
+  padding: 5%;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px;
+}
+.day_clicked{
+  color: white;
+  background: #fe7271;
+  box-shadow: 0px 0px 5px #fe7271;
+}
