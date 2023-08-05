@@ -9,7 +9,6 @@ import Notes from '../../Components/Notes/Notes';
 export default function HomePage() {
 
   const { user } = useContext(AuthContext)
-  console.log(user)
   const CapitalizeFirstLetter = string =>
     string.charAt(0).toUpperCase() + string.slice(1)
 
